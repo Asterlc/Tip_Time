@@ -5,4 +5,9 @@
     <string name="amazing_opt">Amazing (20%)</string>
     <string name="good_opt">Good (18%)</string>
     <string name="regular_opt">Ok (15%)</string>
+    <string name="hint_round_tip">Round tip ?</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="AT_calculate_tip_button">Calculate Tip Button</string>
+    <string name="AT_eighteen_percent_tip">eighteen percent tip</string>
+    <string name="AT_fifteen_percent_tip">Fifteen percent tip</string>
 </resources>

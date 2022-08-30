@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/hint_cost_of_service"
         android:inputType="numberDecimal"
+        android:autofillHints="Cost of Service"
+        android:contentDescription="@string/hint_cost_of_service"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/defaultMargin"
         android:text="@string/default_question"
+        android:contentDescription="@string/default_question"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cost_of_service" />
 
@@ -38,30 +41,45 @@
             android:id="@+id/btn_Radio_amazing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/AT_calculate_tip_button"
             android:text="@string/amazing_opt" />
 
         <RadioButton
             android:id="@+id/btn_Radio_good"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/AT_eighteen_percent_tip"
             android:text="@string/good_opt" />
 
         <RadioButton
             android:id="@+id/btn_Radio_regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/AT_fifteen_percent_tip"
             android:text="@string/regular_opt" />
 
     </RadioGroup>
 
     <Switch
+        android:id="@+id/switch_round_tip"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Round tip ?"
-        android:layout_marginTop="8dp"
+        android:text="@string/hint_round_tip"
+        android:contentDescription="@string/hint_round_tip"
+        android:layout_marginTop="@dimen/defaultMarginTop"
         android:checked="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tip_options" />
 
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/btn_calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_round_tip" />
 </androidx.constraintlayout.widget.ConstraintLayout>
