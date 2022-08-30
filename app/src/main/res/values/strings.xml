@@ -10,4 +10,5 @@
     <string name="AT_calculate_tip_button">Calculate Tip Button</string>
     <string name="AT_eighteen_percent_tip">eighteen percent tip</string>
     <string name="AT_fifteen_percent_tip">Fifteen percent tip</string>
+    <string name="tip_amount">Tip amount: %s</string>
 </resources>

@@ -2,10 +2,39 @@ package com.example.tiptime
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.tiptime.databinding.ActivityMainBinding
+import java.text.NumberFormat
+import kotlin.math.*
+
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnCalculate.setOnClickListener { calculateTip() }
+    }
+
+    private fun calculateTip() {
+        val cost = binding.costOfService.text.toString().toDouble()
+        val selectedId = binding.tipOptions.checkedRadioButtonId
+        val tipPercentage = when (selectedId) {
+            R.id.btn_Radio_good -> 0.18
+            R.id.btn_Radio_regular -> 0.15
+            else -> 0.20
+        }
+
+        var tip = tipPercentage * cost
+        val roundUp = binding.switchRoundTip.isChecked
+        if (roundUp) {
+            tip = ceil(tip)
+        }
+
+        val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
+        binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
+
     }
 }

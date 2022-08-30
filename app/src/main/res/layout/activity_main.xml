@@ -11,10 +11,10 @@
         android:id="@+id/cost_of_service"
         android:layout_width="@dimen/editText_cost_of_service"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_cost_of_service"
-        android:inputType="numberDecimal"
         android:autofillHints="Cost of Service"
         android:contentDescription="@string/hint_cost_of_service"
+        android:hint="@string/hint_cost_of_service"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,8 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/defaultMargin"
-        android:text="@string/default_question"
         android:contentDescription="@string/default_question"
+        android:text="@string/default_question"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cost_of_service" />
 
@@ -64,10 +64,10 @@
         android:id="@+id/switch_round_tip"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/hint_round_tip"
-        android:contentDescription="@string/hint_round_tip"
         android:layout_marginTop="@dimen/defaultMarginTop"
         android:checked="true"
+        android:contentDescription="@string/hint_round_tip"
+        android:text="@string/hint_round_tip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tip_options" />
@@ -76,10 +76,21 @@
         android:id="@+id/btnCalculate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="40dp"
         android:text="@string/btn_calculate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch_round_tip" />
+
+    <TextView
+        android:id="@+id/tip_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/tip_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalculate" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
