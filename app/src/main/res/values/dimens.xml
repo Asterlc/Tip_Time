@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defaultXMLPadding">16dp</dimen>
+    <dimen name="editText_cost_of_service">160dp</dimen>
+    <dimen name="defaultMargin">16dp</dimen>
+</resources>
