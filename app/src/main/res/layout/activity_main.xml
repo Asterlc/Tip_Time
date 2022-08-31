@@ -88,9 +88,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
-        android:text="@string/tip_amount"
+        android:text="@string/tip_amount_zero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnCalculate" />
+        app:layout_constraintTop_toBottomOf="@id/btnCalculate"
+        tools:text="Amount: $10"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
