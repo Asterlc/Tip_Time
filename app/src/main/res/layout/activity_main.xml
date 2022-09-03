@@ -49,9 +49,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/defaultMargin"
-        android:layout_marginStart="@dimen/default_marginLeft_from_icon"
         android:contentDescription="@string/default_question"
         android:text="@string/default_question"
+        app:layout_constraintStart_toStartOf="@+id/cost_of_service"
         app:layout_constraintStart_toEndOf="@+id/icon_service_question"
         app:layout_constraintTop_toBottomOf="@+id/cost_of_service" />
 
@@ -87,8 +87,19 @@
 
     </RadioGroup>
 
+    <ImageView
+        android:id="@+id/icon_switch_round_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/switch_round_up"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_round_up"
+        android:src="@drawable/ic_round_up"
+        />
+
     <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/switch_round_tip"
+        android:id="@+id/switch_round_up"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/defaultMarginTop"
@@ -103,18 +114,18 @@
         android:id="@+id/btnCalculate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:text="@string/btn_calculate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch_round_tip" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/switch_round_up"
+        app:layout_constraintTop_toBottomOf="@+id/switch_round_up" />
 
     <TextView
         android:id="@+id/tip_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="72dp"
         android:text="@string/tip_amount_zero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

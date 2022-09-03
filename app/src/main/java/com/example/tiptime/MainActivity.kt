@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         var tip: Double = tipPercentage * cost
-        val roundUp = binding.switchRoundTip.isChecked
+        val roundUp = binding.switchRoundUp.isChecked
         if (roundUp) {
             tip = ceil(tip)
         }
