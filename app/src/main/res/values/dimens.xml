@@ -5,4 +5,6 @@
     <dimen name="defaultMargin">16dp</dimen>
     <dimen name="defaultMarginTop">8dp</dimen>
     <dimen name="default_marginLeft_from_icon">16dp</dimen>
+    <dimen name="min_text_height">48dp</dimen>
+    <dimen name="radio_padding_start">8dp</dimen>
 </resources>
