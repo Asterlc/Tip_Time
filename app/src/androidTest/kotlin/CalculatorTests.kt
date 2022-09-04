@@ -16,7 +16,7 @@ import org.hamcrest.core.StringContains.containsString
 
 @RunWith(AndroidJUnit4::class)
 class CalculatorTests {
-    @get:Rule()
+    @get:Rule
     val activity = ActivityScenarioRule(MainActivity::class.java)
 
     @Test
